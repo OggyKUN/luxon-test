@@ -7,6 +7,7 @@ import twitter from "../../assets/images/twitter.svg";
 import { OrdinariText } from "../Typography/Typography";
 import { useTranslation } from "react-i18next";
 import { media } from "../../styles/media";
+import { SOCIAL_URLS } from "../../config/urls";
 
 const Wrapper = styled.div`
   display: flex;
@@ -90,16 +91,16 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ className }) => {
     <Wrapper className={className}>
       <OrdinariText>{t("social.usOnSocialMedia")}</OrdinariText>
       <SocialMargin>
-        <SocialButton href="#" variant="instagram" aria-label="Instagram">
+        <SocialButton href={SOCIAL_URLS.instagram} variant="instagram" aria-label="Instagram">
           <img src={instagram} alt="Instagram" />
         </SocialButton>
-        <SocialButton href="#" variant="telegram" aria-label="Telegram">
+        <SocialButton href={SOCIAL_URLS.telegram} variant="telegram" aria-label="Telegram">
           <img src={telegram} alt="Telegram" />
         </SocialButton>
-        <SocialButton href="#" variant="twitter" aria-label="Twitter">
+        <SocialButton href={SOCIAL_URLS.twitter} variant="twitter" aria-label="Twitter">
           <img src={twitter} alt="Twitter" />
         </SocialButton>
-        <SocialButton href="#" variant="mail" aria-label="Inbox">
+        <SocialButton href={SOCIAL_URLS.mail} variant="mail" aria-label="Inbox">
           <img src={inbox} alt="Inbox" />
         </SocialButton>
       </SocialMargin>

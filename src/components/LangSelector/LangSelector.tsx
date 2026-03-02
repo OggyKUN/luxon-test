@@ -6,14 +6,15 @@ import SpainFlag from "../../assets/images/spain_flag.png";
 import EnglishFlag from "../../assets/images/united_kingdom_flag.png";
 import { OrdinariText } from "../Typography/Typography";
 import { media } from "../../styles/media";
+import { Language } from "../../i18n";
 
 type Props = {
-  value: string;
-  options: string[];
-  onChange: (lang: string) => void;
+  value: Language;
+  options: Language[];
+  onChange: (lang: Language) => void;
 };
 
-const flags: Record<string, string> = {
+const flags: Record<Language, string> = {
   Turkish: TurkishFlag,
   English: EnglishFlag,
   Spanish: SpainFlag,

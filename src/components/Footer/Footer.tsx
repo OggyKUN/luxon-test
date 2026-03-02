@@ -8,7 +8,7 @@ import { SocialLinks } from "../SocialLinks/SocialLinks";
 import { OrdinariText } from "../Typography/Typography";
 import { LangSelector } from "../LangSelector/LangSelector";
 import { useTranslation } from "react-i18next";
-import i18n, { getStoredLanguage } from "../../i18n";
+import i18n, { getStoredLanguage, LANGUAGES } from "../../i18n";
 import { media } from "../../styles/media";
 
 const FooterWrapper = styled.footer`
@@ -124,7 +124,7 @@ export const Footer: React.FC = () => {
       <RightColumn>
         <LangSelector
           value={lang}
-          options={["Turkish", "English", "Spanish"]}
+          options={LANGUAGES}
           onChange={handleChange}
         />
         <SocialLinks />

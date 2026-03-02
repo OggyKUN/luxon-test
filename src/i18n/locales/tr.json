@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "OYUNU AÇ"
+  },
+  "footer": {
+    "only18": "Sadece 18+",
+    "certified": "Casino Anjouan Oyun Otoritesi<br/>tarafından sertifikalandırılmıştır"
+  },
+  "downloadCasino": {
+    "title": "Casino'yu İndir",
+    "subtitle": "Her yerde, her zaman Min oynayın",
+    "button": "Uygulamayı Yükle"
+  },
+  "social": {
+    "usOnSocialMedia": "Sosyal medyada biz:"
+  }
+}

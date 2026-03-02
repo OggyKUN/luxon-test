@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "ABRE EL JUEGO"
+  },
+  "footer": {
+    "only18": "Solo 18+",
+    "certified": "El casino está certificado por<br/>Autoridad de Juego de Anjouan"
+  },
+  "downloadCasino": {
+    "title": "Descargar Casino",
+    "subtitle": "Juega Min lugar, en cualquier",
+    "button": "Instalar App"
+  },
+  "social": {
+    "usOnSocialMedia": "Síguenos en redes sociales:"
+  }
+}

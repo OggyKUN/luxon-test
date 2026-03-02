@@ -1,4 +1,3 @@
-// src/styles/breakpoints.ts
 export const breakpoints = {
   desktopXL: "1920px",
   desktopL: "1440px",

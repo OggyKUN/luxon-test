@@ -83,7 +83,7 @@ const CloseButton = styled.button`
   z-index: 10;
 `;
 
-const Hero = () => {
+const HeroComponent = () => {
   const { t } = useTranslation();
   const [isGameOpen, setIsGameOpen] = useState(false);
 
@@ -118,4 +118,4 @@ const Hero = () => {
     </>
   );
 };
-export default Hero;
+export const Hero = HeroComponent;

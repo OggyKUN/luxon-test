@@ -1,4 +1,4 @@
-export type Geo = "TR" | "UA" | "ES";
+export type Geo = "TR" | "UA" | "KZ";
 
 export const GEO_THEMES = {
   TR: {
@@ -16,4 +16,8 @@ export const GEO_THEMES = {
     secondary: "#FFC400",
     accent: "#000000",
   },
+};
+
+export const isValidGeo = (value: string): value is Geo => {
+  return ["TR", "UA", "KZ"].includes(value);
 };

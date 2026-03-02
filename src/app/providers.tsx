@@ -5,7 +5,7 @@ import {
   DefaultTheme,
 } from "styled-components";
 import { theme as baseTheme } from "./theme";
-import { GEO_THEMES, Geo } from "../config/geoConfig";
+import { GEO_THEMES, Geo, isValidGeo } from "../config/geoConfig";
 
 interface ProvidersProps {
   children: ReactNode;
@@ -27,7 +27,15 @@ export const Providers = ({ children }: ProvidersProps) => {
       <StyledThemeProvider theme={theme}>
         {children}
         <div style={{ position: "fixed", bottom: 20, left: 20, zIndex: 999 }}>
-          <select value={geo} onChange={(e) => setGeo(e.target.value as Geo)}>
+          <select
+            value={geo}
+            onChange={(e) => {
+              const value = e.target.value;
+              if (isValidGeo(value)) {
+                setGeo(value);
+              }
+            }}
+          >
             <option value="TR">Turkey</option>
             <option value="UA">Ukraine</option>
             <option value="KZ">Kazakhstan</option>

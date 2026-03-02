@@ -31,7 +31,7 @@ i18n.init({
   resources: {
     English: { translation: en },
     Turkish: { translation: tr },
-    Spain: { translation: es },
+    Spanish: { translation: es },
   },
   lng: getStoredLanguage(),
   fallbackLng: "English",

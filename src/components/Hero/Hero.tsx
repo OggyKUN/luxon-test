@@ -6,6 +6,7 @@ import slotImg from "../../assets/images/slots.png";
 import backgroundImg from "../../assets/images/background.png";
 import { ButtonText } from "../Typography/Typography";
 import { useTranslation } from "react-i18next";
+import toast from "react-hot-toast";
 import { EXTERNAL_URLS } from "../../config/urls";
 
 const HeroSection = styled.section`
@@ -91,6 +92,7 @@ const Hero = () => {
   };
 
   const handleCloseGame = () => {
+    toast(t("toast.closedGame"));
     setIsGameOpen(false);
   };
 

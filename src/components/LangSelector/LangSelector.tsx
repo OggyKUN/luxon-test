@@ -16,7 +16,7 @@ type Props = {
 const flags: Record<string, string> = {
   Turkish: TurkishFlag,
   English: EnglishFlag,
-  Spain: SpainFlag,
+  Spanish: SpainFlag,
 };
 
 const Wrapper = styled.div`

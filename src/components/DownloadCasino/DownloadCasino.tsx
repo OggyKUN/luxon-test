@@ -6,6 +6,7 @@ import { Title, Subtitle } from "../Typography/Typography";
 import { ButtonText } from "../Typography/Typography";
 import download from "../../assets/images/download.svg";
 import { useTranslation } from "react-i18next";
+import toast from "react-hot-toast";
 import { media } from "../../styles/media";
 
 const GradientBorderBox = styled.div`
@@ -73,7 +74,7 @@ const MarginTitle = styled(Title)`
 export const DownloadCasino: React.FC = () => {
   const { t } = useTranslation();
   const handleInstall = () => {
-    alert("Installing app...");
+    toast.success(t("toast.appInstalling"));
   };
 
   return (

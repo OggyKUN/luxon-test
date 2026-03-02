@@ -13,5 +13,9 @@
   },
   "social": {
     "usOnSocialMedia": "Sosyal medyada biz:"
+  },
+  "toast": {
+    "closedGame": "Oyunu kapattınız",
+    "appInstalling": "Uygulama kurulumu başlatıldı..."
   }
 }

@@ -13,5 +13,9 @@
   },
   "social": {
     "usOnSocialMedia": "Síguenos en redes sociales:"
+  },
+  "toast": {
+    "closedGame": "Cerraste el juego",
+    "appInstalling": "Instalación de la aplicación iniciada..."
   }
 }

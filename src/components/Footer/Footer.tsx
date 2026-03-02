@@ -124,7 +124,7 @@ export const Footer: React.FC = () => {
       <RightColumn>
         <LangSelector
           value={lang}
-          options={["Turkish", "English", "Spain"]}
+          options={["Turkish", "English", "Spanish"]}
           onChange={handleChange}
         />
         <SocialLinks />

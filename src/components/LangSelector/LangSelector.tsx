@@ -101,7 +101,7 @@ export const LangSelector: React.FC<Props> = ({ value, options, onChange }) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
-  const handleSelect = (lang: string) => {
+  const handleSelect = (lang: Language) => {
     onChange(lang);
     setIsOpen(false);
   };

@@ -8,7 +8,7 @@ import { SocialLinks } from "../SocialLinks/SocialLinks";
 import { OrdinariText } from "../Typography/Typography";
 import { LangSelector } from "../LangSelector/LangSelector";
 import { useTranslation } from "react-i18next";
-import i18n from "../../i18n";
+import i18n, { getStoredLanguage } from "../../i18n";
 import { media } from "../../styles/media";
 
 const FooterWrapper = styled.footer`
@@ -99,7 +99,7 @@ const CertifiedText = styled(OrdinariText)`
 `;
 export const Footer: React.FC = () => {
   const { t } = useTranslation();
-  const [lang, setLang] = useState("Turkish");
+  const [lang, setLang] = useState(getStoredLanguage());
   const handleChange = (newLang: string) => {
     setLang(newLang);
     i18n.changeLanguage(newLang);
